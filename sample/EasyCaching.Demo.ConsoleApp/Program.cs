@@ -42,13 +42,13 @@
             IServiceProvider serviceProvider = services.BuildServiceProvider();
             var factory = serviceProvider.GetService<IEasyCachingProviderFactory>();
 
-            //var redisCache = factory.GetCachingProvider("r1");
+            //var reidsCache = factory.GetCachingProvider("r1");
 
-            //redisCache.Set<Product>("rkey", new Product() { Name = "test" }, TimeSpan.FromSeconds(20));
+            //reidsCache.Set<Product>("rkey", new Product() { Name = "test" }, TimeSpan.FromSeconds(20));
 
-            //var redisVal = redisCache.Get<Product>("rkey");
+            //var reidsVal = reidsCache.Get<Product>("rkey");
 
-            //Console.WriteLine($"redis cache get value, {redisVal.HasValue} {redisVal.IsNull} {redisVal.Value} ");
+            //Console.WriteLine($"redis cache get value, {reidsVal.HasValue} {reidsVal.IsNull} {reidsVal.Value} ");
 
 
             var mCache = factory.GetCachingProvider("m1");
